@@ -1,14 +1,16 @@
 <template>
-<div id="header">
-    <h1 >Retrospective Action Notes</h1>
+<div>
+     <header class="retro-header">
+        <h1 >Retrospective Action Notes</h1>
+    </header>
 </div>
 </template>
 
 <script>
 </script>
 
-<style>
-    #header {
+<style lang="scss" scoped>
+    .retro-header {
         background-color:#262626;
         width:100%;
         height:100px;
