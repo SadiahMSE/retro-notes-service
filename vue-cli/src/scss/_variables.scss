@@ -1,0 +1,48 @@
+//colors
+
+$blue: #3B93B4;
+$black: #333333;
+$darkBlue: #0095b2;
+$grey: #999999;
+$lightGrey: #ccc;
+$orange: #F37000;
+$darkOrange: #CF5C04;
+$lightGrey: #CBCBCB;
+$red: #EE5A5C;
+$darkWhite: #F6F6F6;
+$yellow: #EEB65A;
+$green: #64C839;
+$white: #fff;
+$lightBlue: #F2F9FB;
+
+$warningMessagesBackground: #fcf4de;
+$errorMessagesBackground: #fcdbd9;
+
+$selectionButtonBackground: #f6f6f6;
+$selectionButtonBorder: #cbcbcb;
+$selectionButtonSelected: #3b93b4;
+
+$validatedGreen: #cbcbcb;
+
+$errorMessage: $red;
+$amberMessage: $yellow;
+$validationMessage: $green;
+$amberMessagePale: rgba(238,198,90,0.2);
+$errorMessagePale: #fcdbd9;
+$validationMessagePale: rgba(100,200,57,0.1);
+
+$toggleFillSelected: $blue;
+$toggleBorderStatic: $lightGrey;
+$toggleTextDisabled: $lightGrey;
+$toggleFillStatic: $darkWhite;
+$toggleFillDisabled: $darkWhite;
+
+$headers: #36ACC3;
+$mainText: $black;
+$links: $darkBlue;
+$linkDisabled: $grey;
+
+$defaultFont: 'museo_slab500';
+
+$copyright: '&#160';
+

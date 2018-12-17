@@ -3,7 +3,7 @@
     <span>Note: </span>
     <ul id="noteList">
         <li v-for="note in notes">
-            {{note.date | dateFormat('YYYY.MM.DD')}}
+            {{note.date | dateFormat}}
             {{note.message}}
         </li>
     </ul>
@@ -14,25 +14,25 @@
 </template>
 
 <script>
-import Vue from 'vue'
-import VueFilterDateFormat from 'vue-filter-date-format'
-
-Vue.use(VueFilterDateFormat)
-
  export default {
      data: function() {
          return { 
              message : "",
              notes: [
-                 {date: new Date("28-08-2018"), message: "Hi"},
+                 {date: new Date("2018-08-20"), message: "Hi"},
                  {date: new Date("29-08-2018"), message: "Hi there"}
              ]
          }
      },
      methods: {
-        addNote: function (event) {
+        addNote: function(event) {
             this.notes.push({date: new Date(), message: this.message});
         }
+     },
+     filters: {
+         dateFormat: function (date) {
+             return date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate();
+         }
      }
  }
 </script>
@@ -42,5 +42,6 @@ Vue.use(VueFilterDateFormat)
         color: black;
         margin: 1rem;
         padding: 1rem;
+        top: 0px;
     }
 </style>
